@@ -1,0 +1,91 @@
+html {
+ box-sizing: border-box;
+ color: midnightblue;
+ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+   Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+   background-color: cover;
+
+}
+
+*,
+*:before,
+*:after {
+ box-sizing: inherit;
+}
+body {
+    background: lavender;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: overlay;
+}
+
+h1 {
+ font-size: 50px;
+ background-color: lavender;
+
+
+
+}
+.intro-paragraph {
+ text-align: center;
+ padding-bottom: 10px;
+ margin-bottom: 40px;
+ background-color: lavender;
+}
+.intro-paragraph p {
+ margin-left: 200px;
+ margin-right: 200px;
+}
+
+/* Each item in our grid will contain numbers */
+.item {
+ /* We center the contents of these items. You can also do this with flexbox too! */
+ display: grid;
+ justify-content: center;
+ align-items: center;
+ border: 5px solid rgba(0, 0, 0, 0.03);
+ border-radius: 3px;
+ font-size: 60px;
+ background-color: var(--yellow); /* best colour */
+}
+
+.item p {
+ margin: 0 0 5px 0;
+}
+
+.food_pic {
+ width: 100%;
+}
+
+.sushi_restaurants {
+ display: grid;
+ grid-template-columns: 1fr;
+ grid-gap: 20px;
+}
+
+.restaurant {
+ background: rgba(255, 255, 255, 0.2);
+ box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+ padding: 20px;
+ color: midnightblue;
+ display: grid;
+ grid-template-columns: 150px 1fr;
+ grid-gap: 20px;
+ align-items: center;
+}
+
+.footer {
+ text-align: center;
+}
+
+@media all and (max-width: 1000px) {
+ .sushi_restaurants {
+   grid-template-columns: 1fr 1fr;
+ }
+}
+
+@media all and (max-width:500px) {
+ .sushi_restaurants {
+   grid-template-columns: 1fr 1fr;
+
+ }
+}
